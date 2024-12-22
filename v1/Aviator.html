@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- Font awesome -->
+  <script
+    src="https://kit.fontawesome.com/47c065c15e.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Font awesome cdnjs -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Compiled and minified CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style-CLM.css" />
+
+  <body>
+    <!-- Header -->
+    <!--Absolute bg-->
+    <div class="header-container">
+      <img
+        src="images/bearcat element.png"
+        alt="Airplane"
+        class="airplane-imagereg"
+      />
+    </div>
+
+    <!-- Header -->
+    <div class="container center">
+      <p></p>
+      <img class="pattsalmreg" src="images/patts alm no bg.png" alt="" />
+    </div>
+
+    <!-- REGISTRATION -->
+    <div class="regpad">
+      <div class="wrapper">
+        <form action="">
+          <h1>Aviator Registration</h1>
+          <div class="input-box">
+            <input
+              type="text"
+              placeholder="Name: Reksyon, Juan D."
+              required
+            /><i class="fa-solid fa-user"></i>
+          </div>
+          <div class="input-box">
+            <input
+              type="email"
+              placeholder="juan.reksyon@patts.edu.ph"
+              required
+            />
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="20XX-X-XXXX" required /><i
+              class="fa-solid fa-address-card"
+            ></i>
+          </div>
+          <div class="ddown">
+            <select id="program" aria-placeholder="Program">
+              <option value="atc">Aircraft Technician Course</option>
+              <option value="ae">BS Aeronautical Engineering</option>
+              <option value="at">BS Air Transportation</option>
+              <option value="amt">BS Aircraft Maintenance Technology</option>
+              <option value="aba">BS Airline Business Administration</option>
+              <option value="av">BS Avionics Technology</option>
+              <option value="ie">BS Industrial Engineering</option>
+              <option value="tm">BS Tourism Management</option>
+              <option value="shs">SHS</option>
+            </select>
+            <i class="fa-solid fa-user-tie"></i>
+          </div>
+
+          <div class="ddown">
+            <select id="year-level">
+              <option value="grade_11">Grade 11</option>
+              <option value="grade_12">Grade 12</option>
+              <option value="1st">1st</option>
+              <option value="2nd">2nd</option>
+              <option value="3rd">3rd</option>
+              <option value="4th">4th</option>
+            </select>
+            <i class="fa-solid fa-pen-nib"></i>
+          </div>
+
+          <button
+            class="btn waves-effect waves-light"
+            type="submit"
+            name="action"
+            href="CLMin.html"
+          >
+            Register
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!--Jquery Sourcing-->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Sidenav Script Setup -->
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+        $(".sidenav-trigger").sidenav();
+      });
+    </script>
+    <!-- Dropdown Script Setup-->
+    <script>
+      $(document).ready(function () {
+        $(".dropdown-trigger").dropdown();
+        $(".tabs").tabs();
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".collapsible").collapsible();
+      });
+    </script>
+  </body>
+</html>
